@@ -1,51 +1,52 @@
-# Impact of COVID-19 on Employment: Project Repository
+# Data Dictionary
 
-## Data Source
+Below is the list of the key variables used in the project:
 
-The dataset used for this analysis is the **Harmonized COVID-19 Household Monitoring Surveys**, sourced from the World Bank. The dataset provides indicators on the socioeconomic impacts of COVID-19, with a focus on employment across various sectors and demographic groups.
+### Key Variables:
 
-### Data Collection
+1. **Country**: The country in which the data was collected.
+   - **Values**: String (e.g., `Brazil`, `India`, `South Africa`, etc.)
 
-The data were collected through high-frequency phone surveys conducted by the World Bank and its partners. The surveys aimed to capture real-time, longitudinal data on the impact of the COVID-19 pandemic, including employment status, work hours, sectoral participation, and income levels.
+2. **Total Weekly Hours Worked (estimates in thousands)**: The total number of hours worked per week by individuals in the population, estimated in thousands.
+   - **Values**: Numeric value, in thousands of hours.
 
-## Data Dictionary
+3. **Percentage of Working Hours Lost**: The proportion of total working hours lost due to the COVID-19 pandemic.
+   - **Values**: Numeric percentage (e.g., `20%`).
 
-The data dictionary contains definitions for all the variables used in this project. Below is a summary of the most important variables included in the dataset:
+4. **Percent Hours Lost (40hrs per week)**: The percentage of normal work hours lost for individuals working a typical 40-hour week.
+   - **Values**: Numeric percentage (e.g., `25%`).
 
-### Key Variables
+5. **Percent Hours Lost (48hrs per week)**: The percentage of normal work hours lost for individuals working a typical 48-hour week.
+   - **Values**: Numeric percentage (e.g., `15%`).
 
-- **Employment Status**: Categorical variable indicating employment status.
-  - Values: `Employed`, `Unemployed`, `Out of labor force`
-  
-- **Industry Sector**: The sector in which the individual is employed.
-  - Values: `Healthcare`, `Hospitality`, `Retail`, `Other`
-  
-- **Total Hours Worked per Week**: The total number of hours worked by the individual in a typical week.
-  
-- **Full-Time Equivalent (FTE) Employment Loss**: Proportion of full-time employment lost due to COVID-19.
-  
-- **Gender**: Gender of the individual.
-  - Values: `Male`, `Female`
-  
-- **Age Group**: Age range of the individual.
-  - Values: `15-24`, `25-54`, `55+`
-  
-- **Region**: The region in which the individual resides.
-  - Values: `East Asia`, `Sub-Saharan Africa`, `Latin America`, etc.
-  
-- **Income Level**: Income group of the individual.
-  - Values: `Low`, `Middle`, `High`
-  
-- **Education Level**: The highest level of education completed by the individual.
-  - Values: `Primary`, `Secondary`, `Tertiary`
-  
-- **Dependency Ratio**: The ratio of dependent individuals (e.g., children, elderly) to working-age adults in the household.
+6. **Labour Dependency Ratio**: The ratio of dependents (such as children or elderly individuals) to the working-age population in the country.
+   - **Values**: Numeric ratio (e.g., `1.2` means 1.2 dependents for each working-age person).
 
-### Additional Variables
+7. **Employed Female 25+ (2019)**: The percentage of females aged 25 and above who were employed in the country in 2019.
+   - **Values**: Numeric percentage (e.g., `70%`).
 
-- **Workforce Participation**: Binary variable indicating whether the individual is part of the labor force.
-  - Values: `Yes`, `No`
-  
-- **Work Hours Lost**: Proportion of normal work hours lost during the pandemic.
-  
-- **Sectoral Participation**: The individual’s participation rate in a specific industry sector (e.g., hospitality, healthcare).
+8. **Employed Male 25+ (2019)**: The percentage of males aged 25 and above who were employed in the country in 2019.
+   - **Values**: Numeric percentage (e.g., `80%`).
+
+9. **Ratio of Weekly Hours Worked by Population Aged 15-64**: The ratio of total hours worked by individuals aged 15-64 in the country compared to the total possible working hours.
+   - **Values**: Numeric ratio (e.g., `0.85` means 85% of possible working hours are worked by this age group).
+
+---
+
+### Explanation of Key Variables:
+
+- **Country**: This variable helps identify the geographic region for each observation. It is crucial for country-level comparisons and understanding regional trends in employment.
+
+- **Total Weekly Hours Worked**: Indicates the total number of hours worked by the population across various sectors. This is a key measure for analyzing the general impact of the pandemic on work hours.
+
+- **Percentage of Working Hours Lost**: This percentage represents how much of the total working time was lost, which directly correlates with the economic impact of COVID-19 on employment.
+
+- **Percent Hours Lost (40hrs per week)** and **Percent Hours Lost (48hrs per week)**: These variables allow for a more granular analysis, showing how different work-hour expectations (40 vs. 48 hours) are affected by the pandemic.
+
+- **Labour Dependency Ratio**: Important for understanding the burden of dependency on the employed population. It can help inform policies related to labor market recovery.
+
+- **Employed Female/Male 25+ (2019)**: These two variables allow for gender-based comparisons, assessing how employment rates for males and females aged 25 and above were impacted during the pandemic compared to pre-pandemic levels in 2019.
+
+- **Ratio of Weekly Hours Worked by Population Aged 15-64**: This variable is essential to understanding labor force participation among the working-age population (15-64 years). It's useful for identifying changes in employment behavior due to COVID-19.
+
+---
